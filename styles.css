@@ -1,0 +1,87 @@
+/* Basic Body and Font Styles */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+/* Introduction Section Specific Styling */
+#intro {
+    background-image: url('https://images.unsplash.com/photo-1522252234503-e356532cafd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDN8fGNvZGV8ZW58MHx8fHwxNjE2NTc1MTE5&ixlib=rb-1.2.1&q=80&w=1080');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+/* Consistent Section Styling */
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Styling Project Cards with Flexbox */
+.project-container {
+    display: flex;
+    gap: 1rem; /* Space between cards */
+    flex-wrap: wrap; /* Allows cards to stack on smaller screens */
+}
+
+.project-card {
+    flex: 1; /* Allows cards to grow and fill available space */
+    min-width: 250px; /* Prevents cards from becoming too narrow */
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Styling the Skills List */
+#skills ul {
+    list-style-type: none; /* Removes default bullets */
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#skills li {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 15px; /* Creates the badge/tag shape */
+}
