@@ -60,15 +60,41 @@ section {
     flex-wrap: wrap; /* Allows cards to stack on smaller screens */
 }
 
+/*
+ * CHANGED: The .project-card div now only controls layout (flex properties).
+ * All visual styles were moved to the 'a' tag to make the entire box clickable.
+*/
 .project-card {
     flex: 1; /* Allows cards to grow and fill available space */
     min-width: 250px; /* Prevents cards from becoming too narrow */
+}
+
+/*
+ * ADDED: All the visual styles are now on the link itself.
+ * This makes the entire styled box a single, clickable link.
+*/
+.project-card a {
+    /* --- Properties moved from .project-card --- */
     background-color: white;
     border: 1px solid #ddd;
     padding: 1.5rem;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    /* --- Properties to make it a clickable box --- */
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease-in-out;
 }
+
+/* ADDED: A recommended hover effect for better user feedback */
+.project-card a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 
 /* Styling the Skills List */
 #skills ul {
